@@ -8,6 +8,7 @@ const AmountFund = document.querySelector('.amount-fund')
 const Debit = document.querySelector('.amount-withdrawl')
 const Addup = document.getElementById('top-up')
 const Minus = document.getElementById('request')
+const forms = document.querySelector('form')
 console.log(userName);
 
 // input user name
@@ -34,29 +35,33 @@ currBalance.addEventListener("input", currentBalance);
 // Get amount to fund 
 function amountFund() {
      Fund = AmountFund.value;
-    console.log(Fund);
 }
 AmountFund.addEventListener("input", amountFund);
 
 //Get amount to withdrawl
 function Withdrawal() {
-   debits = Debit.value;
-    console.log(debits);
+    remove = Debit.value;
+    console.log(remove);
 }
 Debit.addEventListener("input", Withdrawal);
 
 
 function Topup() {
-    availBalance.innerHTML = `$${Number(balance) + Number(Fund)}`
+        availBalance.innerHTML = `$${Number(balance) + Number(Fund)}` 
+    forms.reset();
 
 }
 function requests() {
-    if (balance > debits) {
-        availBalance.innerHTML = `$${Number(balance) - Number(debits)}`;  
+    console.log(balance);
+    console.log(remove);
+    if (balance >= remove) {
+        availBalance.innerHTML = `$${Number(balance) - Number(remove)}`;
     } else {
         alert(`your available balance is ${balance}`)
     }
-   
+    forms.reset()
+
+    
 }
 Addup.addEventListener('click', Topup)
 Minus.addEventListener('click', requests)
