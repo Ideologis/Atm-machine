@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+     <div class="Balance">
+         <p>Your Balance </p>
+         <h3 class="dollars">$2000</h3>
+     </div>
+     <div class="atmcard">
+          <h6>Account Number</h6>
+           <p class="atm">**** **** **** 2864</p>
+        <div class="atmbottom">
+            <div class="atmName">
+                <p>Name</p>
+                <h4 id="card-name">Ideologist</h4>
+            </div>
+            <div class="atmDate">
+                <h5>Valid Thur</h5>
+                 <p>08/23</p>
+            </div>
+            <div class="mastercard">
+                <img src="/mc_symbol.svg" alt="" width="50px">
+                <p>mastercard</p>
+            </div>
+        </div>
+     </div>
+     <div class="transact">
+         <button id="top-up" type="submiy">Topup</button>
+         <button id="request" type="submit">Request</button>
+
+     </div>
+     <form action="">
+            <div>
+                <input type="text" class="user-name" placeholder="your-name" required>
+            </div>
+            <div>
+                <input type="password" class="card-input"  placeholder="your last 4 digit" required>
+            </div>
+            <div>
+                <input type="number" class="current-balance" placeholder="current balance">
+            </div>
+            <div>
+                <input type="number" class="amount-fund" placeholder="amount-to-fund">
+            </div>
+            <div>
+                <input type="number" class="amount-withdrawl" placeholder="amount withdraw">
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

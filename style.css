@@ -1,0 +1,107 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 500px;
+    background-color: #fff;
+    padding: 10px;
+}
+.Balance{
+    margin: 10px auto;
+    text-align: center;
+}
+.Balance p {
+    font-size: .6em;
+    font-weight: 300;
+}
+.atmcard{
+    background-color:#023E8A;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    animation: atmcard;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes atmcard{
+    0%  {left:-400px}
+    100% {left:0px}
+}
+.atmcard h6{
+    color: #fff;
+    margin: 4px 0px;
+}
+.atm{
+    color: #fff;
+    margin-bottom:20px;
+    
+}
+.atmbottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 8px; */
+}
+.atmName p{
+    font-size: .6em;
+    margin-bottom: 3px;
+    color: #fff;
+}
+.atmName h4{
+    font-size: .9em;
+    color: #fff;
+}
+.atmDate h5{
+    font-weight:thin;
+    font-size: .7em;
+    color: #fff;
+}
+.atmDate p {
+    font-size: .8em;
+    color: #fff;
+}
+.mastercard img{
+    margin-bottom: 0px ;
+}
+.mastercard p{
+    font-size: .7em;
+    color: #fff;
+}
+.transact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top-up,
+#request{
+    margin: 8px;
+    padding: 6px;
+    color :#023E8A;
+    background-color: #fff;
+    border: 1px solid;
+    outline: none;
+    border-radius: 10px;
+}
+form{
+    margin-bottom: 5px;
+    width: 100%;
+}
+input{
+    margin-bottom: 4px;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    padding: 3px;
+    border: 1px solid #ccc;
+    font-size: .6em;
+}
+input:hover{
+    border: 1px solid #CAF0F8;
+}
