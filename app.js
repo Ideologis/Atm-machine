@@ -48,7 +48,8 @@ Debit.addEventListener("input", Withdrawal);
 
 function Topup() {
         availBalance.innerHTML = `$${Number(balance) + Number(Fund)}` 
-    forms.reset();
+    balance = "";
+    Fund = "";
 
 }
 function requests() {
@@ -59,7 +60,8 @@ function requests() {
     } else {
         alert(`your available balance is ${balance}`)
     }
-    forms.reset()
+    balance = "";
+    remove = "";
 
     
 }
